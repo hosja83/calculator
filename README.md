@@ -1,7 +1,7 @@
 # Calculator
 Live Webpage: Hold tight, coming soon...
 
-# Tools
+## Tools
 Languages & Web Technologies
 - HTML
 - JavaScript
@@ -17,8 +17,8 @@ npm test calculator.spec.js
 ```
 Make sure to have installed node runtime environment and installed related packages or Jest test cases will not run.
 
-# IDE
+## IDE
 Visual Studio
 
-# OS
+## OS
 Linux/Unix VM environment
