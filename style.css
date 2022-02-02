@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  /*font*/
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 600px; /*400*/
+  width: 380px; /*245*/
+  margin-bottom: 115px;
+}
+
+.display-container {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-top: auto;
+  margin-bottom: 26px;
+}
+
+.grid-container button {
+  font-size: 25px;
+}
+
+.clear {
+  grid-column: 1 / span 2;
+}
+
+.backspace {
+}
+
+.divide {
+}
+
+.multiply {
+}
+
+.subtract {
+}
+
+.plus {
+}
+
+.equals {
+}
+
+.period {
+}
+
+.plus-minus {
+}
+
+.zero {}
+}
+
+.seven {
+}
+
+.eight {
+}
+
+.nine {
+}
+
+.four {
+}
+
+.five {
+}
+
+.six {
+}
+
+.one {
+}
+
+.two {
+}
+
+.three {
+}
