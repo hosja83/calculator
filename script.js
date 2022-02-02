@@ -22,6 +22,8 @@ function divide(a, b) {
   return parseFloat((1.0 * a / b).toFixed(9));
 };
 
+function operate(operator, x, y) { return operator(x, y) };
+
 module.exports = {
   add,
   subtract,
