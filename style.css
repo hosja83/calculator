@@ -10,28 +10,37 @@
   min-height: 100vh;
 }
 
+/*Smallest width screen commonly used 320px*/
+/*document.documentElement.clientWidth*/
+/*document.documentElement.clientHeight*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 600px; /*400*/
-  width: 410px; /*245*/
-  margin-bottom: 115px;
+  height: 67vh; /*890vh*/ /*600px*/
+  width: 600px; /*1730vw*//*600px*/
+  margin-bottom: 13vh;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (min-height: 1440px) {
   .grid-container {
-    height: 450px;
-    width: 300px;
+    min-width: 38vw;
+  }
+}
+
+@media screen and (min-height: 2500px) {
+  .grid-container {
+    min-width: 45vw;
   }
 }
 
 .display-container {
   grid-column: 1 / span 4;
-  display: flex;
-  flex-direction: column;
   text-align: end;
   margin-top: auto;
   margin-bottom: 26px;
+  font-size: 50px;
+  overflow-wrap: break-word;
+  max-height: 95px;
 }
 
 .grid-container button {
@@ -66,32 +75,6 @@
 .plus-minus {
 }
 
-.zero {}
-}
+.number {
 
-.seven {
-}
-
-.eight {
-}
-
-.nine {
-}
-
-.four {
-}
-
-.five {
-}
-
-.six {
-}
-
-.one {
-}
-
-.two {
-}
-
-.three {
 }
