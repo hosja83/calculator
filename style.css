@@ -8,7 +8,7 @@ body {
 }
 
 .background {
-  background-image: url('/img/gradient-orangy-red.jpg');
+  background-image: url('./img/gradient-orangy-red.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -30,6 +30,7 @@ body {
   height: 67vh; /*890vh*/ /*600px*/
   width: 600px; /*1730vw*//*600px*/
   margin-bottom: 13vh;
+  margin-top: 35px;
   border: 8px solid #080808;
   border-radius: 13px;
   padding: 10px;
@@ -38,26 +39,24 @@ body {
 }
 
 .display-container {
-  display: inline-block;
   grid-column: 1 / span 4;
   text-align: right;
   max-width: 600px;
   font-size: 50px;
   overflow-wrap: break-word;
-  height: 115px;
-  margin-bottom: -16px;
-  border: 2px solid #cbc9c8;
+  height: 100px;
+  margin-bottom: -46px;
+  padding-top: 7px;
+  border: 1px solid #cbc9c8;
   border-radius: 4px;
   color: black;
   background-color: #fffae9;
+  line-height: 1.22cm;
 }
 
-@media screen and (max-height: 525px) {
-  .display-container {
-    margin-bottom: 20px;
-  }
+@media screen and (min-height: 2500px) {
   .grid-container {
-    min-width: 38vw;
+    min-width: 45vw;
   }
 }
 
@@ -67,9 +66,71 @@ body {
   }
 }
 
-@media screen and (min-height: 2500px) {
+@media screen and (max-height: 840px) {
+  .display-container {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-height: 730px) {
+  .display-container {
+    margin-bottom: -16px;
+  }
+}
+
+@media screen and (max-height: 650px) {
   .grid-container {
-    min-width: 45vw;
+    height: 436px;
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .grid-container {
+    min-width: 38vw;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .grid-container {
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-height: 505px) {
+  .grid-container {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-height: 435px) {
+  .grid-container {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 374px) {
+  .display-container {
+    margin-bottom: -2px;
+  }
+  button {
+    height: 39px;
+  }
+}
+
+@media screen and (max-height: 346px) {
+  .grid-container {
+    border: 0;
+    padding: 3px 10px;
+    padding-bottom: 0px;
+  }
+  .display-container {
+    margin-bottom: -4px;
+    height: 91px;
+    padding-top: 0px;
+  }
+  button {
+    height: 39px;
   }
 }
 
@@ -91,7 +152,6 @@ body {
 .backspace {
   background-color: #f0e6c2;
 }
-
 
 .equals, .plus, .subtract, .multiply, .divide {
   background-color: #ffaa57;
