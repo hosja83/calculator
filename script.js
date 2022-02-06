@@ -163,10 +163,10 @@ function clearDisplay() {
 }
 
 function checkCharactersDisplayedCount() {
-  if (countCharactersDisplayed >= 47 && !isPeriodUsed) {
+  if (countCharactersDisplayed >= 43 && !isPeriodUsed) {
     removeNumberButtonListeners();
     removePeriodButtonListener();
-  } else if (countCharactersDisplayed >= 47) {
+  } else if (countCharactersDisplayed >= 43) {
     removeNumberButtonListeners();
   }
 }

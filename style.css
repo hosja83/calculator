@@ -3,6 +3,17 @@
   /*font*/
 }
 
+body {
+  margin: 0;
+}
+
+.background {
+  background-image: url('/img/gradient-orangy-red.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
 .calculator-container {
   display: flex;
   justify-content: center;
@@ -19,16 +30,26 @@
   height: 67vh; /*890vh*/ /*600px*/
   width: 600px; /*1730vw*//*600px*/
   margin-bottom: 13vh;
+  border: 8px solid #080808;
+  border-radius: 13px;
+  padding: 10px;
+  gap: 7px;
+  background-color: #080808;
 }
 
 .display-container {
+  display: inline-block;
   grid-column: 1 / span 4;
-  text-align: end; /*find way to make text type from bottom right*/
+  text-align: right;
   max-width: 600px;
   font-size: 50px;
   overflow-wrap: break-word;
-  height: 95px;
+  height: 115px;
   margin-bottom: -16px;
+  border: 2px solid #cbc9c8;
+  border-radius: 4px;
+  color: black;
+  background-color: #fffae9;
 }
 
 @media screen and (max-height: 525px) {
@@ -54,40 +75,28 @@
 
 .grid-container button {
   font-size: 20px;
+  border-radius: 12px;
+  font-weight: 700;
 }
 
 .reset {
-  
+  background-color: #080808;
+  color: #e6e4db;
 }
 
 .clear-entry {
-  
+  background-color: #f0e6c2;
 }
 
 .backspace {
+  background-color: #f0e6c2;
 }
 
-.divide {
+
+.equals, .plus, .subtract, .multiply, .divide {
+  background-color: #ffaa57;
 }
 
-.multiply {
-}
-
-.subtract {
-}
-
-.plus {
-}
-
-.equals {
-}
-
-.period {
-}
-
-.plus-minus {
-}
-
-.number {
-
+.number, .period, .plus-minus {
+  background-color: #cbc9c8;
 }
