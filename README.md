@@ -1,5 +1,5 @@
 # Calculator
-Live Webpage: Hold tight, coming soon...
+Live Webpage: https://hosja83.github.io/calculator/
 
 ## Tools
 Languages & Web Technologies
