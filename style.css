@@ -21,6 +21,25 @@
   margin-bottom: 13vh;
 }
 
+.display-container {
+  grid-column: 1 / span 4;
+  text-align: end; /*find way to make text type from bottom right*/
+  max-width: 600px;
+  font-size: 50px;
+  overflow-wrap: break-word;
+  height: 95px;
+  margin-bottom: -16px;
+}
+
+@media screen and (max-height: 525px) {
+  .display-container {
+    margin-bottom: 20px;
+  }
+  .grid-container {
+    min-width: 38vw;
+  }
+}
+
 @media screen and (min-height: 1440px) {
   .grid-container {
     min-width: 38vw;
@@ -33,22 +52,16 @@
   }
 }
 
-.display-container {
-  grid-column: 1 / span 4;
-  text-align: end;
-  margin-top: auto;
-  margin-bottom: 26px;
-  font-size: 50px;
-  overflow-wrap: break-word;
-  max-height: 95px;
-}
-
 .grid-container button {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.clear {
-  grid-column: 1 / span 2;
+.reset {
+  
+}
+
+.clear-entry {
+  
 }
 
 .backspace {
