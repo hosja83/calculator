@@ -114,7 +114,7 @@ function eraseOneCharacter() {
   if (numberCurrentlyDisplayed !== undefined && numberCurrentlyDisplayed !== "") {
     const ch = numberCurrentlyDisplayed[numberCurrentlyDisplayed.length - 1];
     numberCurrentlyDisplayed = numberCurrentlyDisplayed.substr(0, numberCurrentlyDisplayed.length - 1);
-    if (countCharactersDisplayed === 47) {
+    if (countCharactersDisplayed === 43) {
       countCharactersDisplayed--;
       activateNumberButtonListeners();
       if (ch == '.')
