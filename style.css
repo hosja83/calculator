@@ -5,6 +5,12 @@
 
 body {
   margin: 0;
+  -ms-overflow-style: none; /* hide scrollbar, keep functionality IE & Edge */ 
+  scrollbar-width: none; /* hide scrollbar, keep functionality Firefox */ 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* hide scrollbar, keep functionality Chrome, Safari and Opera */ 
 }
 
 .background {
@@ -174,7 +180,8 @@ body {
 
 @media screen and (max-width: 540px) and (max-height:915px) {
   .grid-container {
-    height: 100vh;
+    height: 100vh; /* Fallback for browser compatibility not supporting custom properties */
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
   }
 
@@ -240,7 +247,8 @@ body {
 
 @media screen and (max-height: 435px) {
   .grid-container {
-    height: 100vh;
+    height: 100vh;/* fallback */
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 

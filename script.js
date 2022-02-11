@@ -275,8 +275,13 @@ function convertNANDisplayValueToZero(value) {
   return value;
 }
 
+function setViewportHeight() {
+  viewportHeight = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+}
+
 let countCharactersDisplayed, numberCurrentlyDisplayed, isPeriodUsed, firstOperand, secondOperand,
-    operation, previousOperation, result, equalsFlag, divideByZeroFlag;
+    operation, previousOperation, result, equalsFlag, divideByZeroFlag, viewportHeight;
 
 numberCurrentlyDisplayed = '';
 countCharactersDisplayed = 0;
@@ -289,6 +294,9 @@ previousOperation = undefined;
 result = undefined;
 equalsFlag = 0;
 divideByZeroFlag = 0;
+
+setViewportHeight();
+window.addEventListener('resize', () => { setViewportHeight(); });
 
 const numbers = document.querySelectorAll('button.number');
 const display = document.querySelector('div.display-container');
