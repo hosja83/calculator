@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 /*Smallest width screen commonly used 320px*/
 /*document.documentElement.clientWidth*/
 /*document.documentElement.clientHeight*/
-.grid-container {
+.grid-container { /* Try out fix to landscape using background-origin */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 67vh; /*890vh*/ /*600px*/
@@ -51,12 +51,12 @@ body::-webkit-scrollbar {
   overflow-wrap: break-word;
   height: 100px;
   margin-bottom: -46px;
-  padding-top: 7px;
+  padding-top: 1.6px;
   border: 1px solid #cbc9c8;
   border-radius: 4px;
   color: black;
   background-color: #fffae9;
-  line-height: 1.22cm;
+  line-height: 1.42cm;
 }
 
 .grid-container button {
