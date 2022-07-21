@@ -23,11 +23,13 @@
     "type": "git",
     "url": "git+https://github.com/hosja83/calculator.git"
   },
-  "keywords": [],
+  "keywords": [
+    "calculator"
+  ],
   "author": "Alhosainy Altaher",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hosja83/calculator/issues"
   },
-  "homepage": "https://github.com/hosja83/calculator#readme"
+  "homepage": "https://hosja83.github.io/calculator/"
 }
